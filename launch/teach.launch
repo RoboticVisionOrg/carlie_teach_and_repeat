@@ -5,7 +5,8 @@
     <!-- Teach Node -->
     <node pkg="carlie_teach_and_repeat" type="teach" name="teach_node" output="screen">
         <!-- remap topics -->
-        <remap from="odom" to="/pose_camera/odom/sample"/>
+        <!-- <remap from="odom" to="/pose_camera/odom/sample"/> -->
+        <remap from="odom" to="/carlie/odom/filtered"/>
         <remap from="image_raw" to="/rgbd_camera/color/image_rect_color"/>
 
         <!-- key arguments -->
