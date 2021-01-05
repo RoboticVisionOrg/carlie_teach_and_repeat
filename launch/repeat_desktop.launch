@@ -1,6 +1,6 @@
 <launch>
     <!-- Global Parameters -->
-    <param name="max_forward_velocity" value="0.5" type="double"/>
+    <rosparam param="/carlie/velocity_safety_limits">[-0.5, 0.5]</rosparam>
 
     <!-- Teach Node -->
     <node pkg="carlie_teach_and_repeat" type="repeat_example" name="repeat_node" output="screen">
